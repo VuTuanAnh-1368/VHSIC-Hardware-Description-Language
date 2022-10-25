@@ -4,3 +4,5 @@ The T flip-flop is a single input version of the JK flip-flop. As shown in figur
 Complete VHDL code for T flip-flop using the behavioral method!
 ## 
 The entity will declare the input and output ports for the T flip-flop. We have the clock, the reset, and the T input as actual inputs. The outputs are just the usual Q and Qb. As has been the case with all the remaining flip-flops, we will use behavioral architecture. That’s the entity-architecture pair sorted right there.
+## Simulation Waveforms
+![image](https://user-images.githubusercontent.com/92041804/197765815-83cba99f-47be-4125-8458-4e74b74874e8.png)
