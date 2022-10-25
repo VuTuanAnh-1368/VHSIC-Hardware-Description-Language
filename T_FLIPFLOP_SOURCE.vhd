@@ -1,0 +1,25 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity T_FLIPFLOP_SOURCE is
+   Port ( T,CLK : in  STD_LOGIC;
+          Q,Qn : out STD_LOGIC);
+end T_FLIPFLOP_SOURCE;
+
+architecture Behavioral of T_FLIPFLOP_SOURCE is
+
+begin
+
+PROCESS(T,CLK)
+
+	VARIABLE TEMP:STD_LOGIC:='0';
+
+BEGIN
+      
+	Q<=T NAND (NOT TEMP) NAND NOT TEMP;
+	Qn<= NOT Q;
+
+END PROCESS;
+END BEHAVIORAL;
